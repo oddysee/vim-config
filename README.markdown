@@ -1,3 +1,6 @@
+## This is a branch of Sontek's excellent work. I am still coming to grips with Git and have unfortunately managed to break the inheritance here.
+
+
 ## Files
 .vim
     directory of file type configurations and plugins
