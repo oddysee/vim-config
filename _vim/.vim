@@ -1,1 +1,1 @@
-/home/sontek/code/dotfiles/_vim
+/Users/sumanjay/Downloads/dotfiles/_vim
