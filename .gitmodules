@@ -67,3 +67,6 @@
 [submodule "_vim/bundle/nerdcommenter"]
 	path = _vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "_vim/bundle/yankring"]
+	path = _vim/bundle/yankring
+	url = https://github.com/vim-scripts/YankRing.vim.git
