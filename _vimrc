@@ -129,6 +129,10 @@ map <leader>j :RopeGotoDefinition<CR>
 
 " Rename whatever the cursor is on (including references to it)
 map <leader>r :RopeRename<CR>
+
+" YankRing	
+nnoremap <leader>y :YRShow<CR>
+
 " ==========================================================
 " Pathogen - Allows us to organize our vim plugins
 " ==========================================================
@@ -173,7 +177,6 @@ nnoremap <leader>. :lcd %:p:h<CR>
 " don't select first item, follow typing in autocomplete
 set completeopt=menuone,longest,preview
 set pumheight=6             " Keep a small completion window
-
 
 """ Moving Around/Editing
 set cursorline              " have a line indicate the cursor location
@@ -226,7 +229,7 @@ set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 nmap <leader>l :set list!<CR>
 "set listchars=tab:>-,eol:$,trail:-,precedes:<,extends:>
 set listchars=tab:▸\ ,eol:¬
-set list
+set nolist
 
 """ Searching and Patterns
 set ignorecase              " Default to using case insensitive searches,
@@ -249,6 +252,7 @@ endif
 
 " Paste from clipboard
 map <leader>p "+p
+
 
 " Quit window on <leader>q
 nnoremap <leader>q :q<CR>
@@ -312,7 +316,7 @@ if filereadable($VIRTUAL_ENV . '/.vimrc')
     source $VIRTUAL_ENV/.vimrc
 endif
 
-" set colorcolumn=0
+ set colorcolumn=80
 
 " Auto-save buffers
 :au FocusLost * silent! wa
